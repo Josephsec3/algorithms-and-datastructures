@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    int a, o=0; cin >> a;
+    char c;
+    string s;
+    for (int i=0; i<a; i++){
+        cin >> c;
+        if (c=='0'){
+            s+=('0');
+            o=0;
+        }
+        else o++;
+    }
+    cout << s;
+}
